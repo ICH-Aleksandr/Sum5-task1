@@ -1,0 +1,93 @@
+.form {
+  max-width: 480px;
+  margin: 40px auto;
+  padding: 32px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow:
+    0 4px 6px rgba(0, 0, 0, 0.5),
+    0 10px 20px rgba(0, 0, 0, 0.25);
+  font-family: "Segoe UI", sans-serif;
+}
+
+.title {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 24px;
+  color: #1a1a2e;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+}
+
+.label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #444;
+  margin-bottom: 4px;
+}
+
+.input {
+  padding: 10px 12px;
+  border: 1.5px solid #ddd;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: border-color 0.2s;
+  outline: none;
+}
+
+.input:focus {
+  border-color: #4f46e5;
+}
+
+.error {
+  font-size: 12px;
+  color: #e53e3e;
+  margin-top: 4px;
+}
+
+.hint {
+  font-size: 12px;
+  color: #888;
+  margin-top: 4px;
+}
+
+.checkboxField {
+  margin-bottom: 16px;
+}
+
+.checkboxLabel {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: #444;
+  cursor: pointer;
+}
+
+.button {
+  width: 100%;
+  padding: 12px;
+  background-color: #4f46e5;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition:
+    background-color 0.2s,
+    opacity 0.2s;
+}
+
+.button:hover:not(:disabled) {
+  background-color: #4338ca;
+}
+
+.button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
